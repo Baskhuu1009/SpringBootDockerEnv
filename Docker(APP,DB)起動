@@ -1,0 +1,19 @@
+１。Docker起動
+cd docker
+docker-compose up -d
+ 
+２。DBクライアントはDocker起動後下記確認
+http://localhost:4200/
+
+３。Docker起動後、Javaのプロセスに移動
+docker exec -it java /bin/bash
+
+４。Gradleビルド
+sh gradlew build
+
+５。アプリケーション起動
+java -jar build/libs/sample-0.0.1-SNAPSHOT.jar
+
+
+６。アプリケーション起動後、下記curlコマンドAPIアプリの起動確認
+curl http://localhost:8080/showaccount

@@ -4,5 +4,4 @@
 *.iml
 *.xml
 *.lock
-docker/*.properties
-docker/*.pid
+/spring_prj/
